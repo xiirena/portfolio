@@ -1,102 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>caackee | Staff Portfolio</title>
-  <meta
-    name="description"
-    content="Modern portfolio for caackee showcasing staff work and contact details."
-  />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caackee | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons for a modern look -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-  <div class="bg-glow bg-glow-1" aria-hidden="true"></div>
-  <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
-  <div class="bg-grid" aria-hidden="true"></div>
 
-  <header class="site-header glass reveal">
-    <div class="brand">
-      <span class="brand-dot"></span>
-      <span class="brand-text">caackee</span>
-    </div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#staff">Staff Work</a>
-      <a href="#contact">Contact</a>
+    <div class="glow-bg"></div>
+
+    <nav class="navbar">
+        <div class="logo">caackee<span>.</span></div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#projects">Work</a>
+            <a href="#contact">Contact</a>
+        </div>
     </nav>
-  </header>
 
-  <main>
-    <section class="hero reveal">
-      <p class="tagline">MODERN STAFF PORTFOLIO</p>
-      <h1>
-        I am <span class="glow-text">caackee</span><br />
-        building cool communities.
-      </h1>
-      <p class="hero-description">
-        Discord staff profile with fast responses, event support, moderation focus,
-        and polished team coordination.
-      </p>
-      <div class="hero-cta">
-        <a class="btn btn-primary" href="#staff">View Work</a>
-        <a class="btn btn-ghost" href="#contact">Discord Contact</a>
-      </div>
-      <div class="floating-card glass">
-        <h3>Live Profile</h3>
-        <p><strong>Username:</strong> caackee</p>
-        <p><strong>Discord:</strong> 2m4d2b4d / ! 2m4d</p>
-        <span class="pulse-badge">Available</span>
-      </div>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="fade-in">Hi, I'm <span class="highlight">caackee</span></h1>
+            <p class="fade-in-delayed">Developer & Staff Specialist</p>
+            <div class="badge-container fade-in-delayed">
+                <span class="badge">Minecraft Modding</span>
+                <span class="badge">UI/UX</span>
+                <span class="badge">Systems</span>
+            </div>
+        </div>
     </section>
 
-    <section id="about" class="section reveal">
-      <h2>About Me</h2>
-      <p>
-        I help run Discord spaces with structure, calm moderation, and strong
-        community vibes. I like clean systems, active chats, and smooth server flow.
-      </p>
+    <section id="projects" class="cards-section">
+        <h2 class="section-title">Projects & Expertise</h2>
+        <div class="grid">
+            <div class="card glass">
+                <i data-lucide="code-2" class="icon"></i>
+                <h3>Module Porting</h3>
+                <p>Expertise in porting complex Java modules between Minecraft client frameworks.</p>
+            </div>
+            <div class="card glass">
+                <i data-lucide="layout" class="icon"></i>
+                <h3>Web Dashboards</h3>
+                <p>Creating high-performance, modern interfaces for client modification hosting.</p>
+            </div>
+            <div class="card glass">
+                <i data-lucide="terminal" class="icon"></i>
+                <h3>Server Scripting</h3>
+                <p>Custom Skript solutions for inventory management and protected area interactions.</p>
+            </div>
+        </div>
     </section>
 
-    <section id="staff" class="section reveal">
-      <h2>Staff Stuff</h2>
-      <div class="cards">
-        <article class="card glass tilt-card">
-          <h3>Moderation</h3>
-          <p>Fast and fair conflict handling with consistent rule enforcement.</p>
-        </article>
-        <article class="card glass tilt-card">
-          <h3>Community Events</h3>
-          <p>Planning engaging activities that keep members active and connected.</p>
-        </article>
-        <article class="card glass tilt-card">
-          <h3>Server Growth</h3>
-          <p>Improving onboarding, channels, and retention with modern structure.</p>
-        </article>
-      </div>
+    <section id="contact" class="contact-section">
+        <div class="glass contact-card">
+            <h2>Let's Connect</h2>
+            <div class="contact-info">
+                <div class="info-item">
+                    <i data-lucide="github"></i>
+                    <span>caackee</span>
+                </div>
+                <div class="info-item">
+                    <i data-lucide="message-square"></i>
+                    <span>2m4d2b4d</span>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contact" class="section reveal">
-      <h2>Contact</h2>
-      <p>Reach out on Discord if you want me on your staff team.</p>
-      <div class="contact-box glass">
-        <p><strong>Discord:</strong> <span id="discordText">2m4d2b4d / ! 2m4d</span></p>
-        <button id="copyDiscord" class="btn btn-primary">Copy Discord</button>
-        <p id="copyMessage" class="copy-message" aria-live="polite"></p>
-      </div>
-    </section>
-  </main>
+    <footer>
+        <p>&copy; 2026 caackee. Built with passion.</p>
+    </footer>
 
-  <footer class="site-footer reveal">
-    <p>Built for caackee • Dark red & purple neon vibe</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
