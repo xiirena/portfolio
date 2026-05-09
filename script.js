@@ -4,6 +4,7 @@ const copyBtn = document.getElementById("copyDiscord");
 const copyMessage = document.getElementById("copyMessage");
 const discordText = document.getElementById("discordText");
 const navLinks = document.querySelectorAll("nav a");
+const sections = document.querySelectorAll("main section[id]");
 
 const revealObserver = new IntersectionObserver(
   (entries) => {
@@ -48,6 +49,23 @@ navLinks.forEach((link) => {
     });
   });
 });
+
+const navObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      navLinks.forEach((link) => {
+        const href = link.getAttribute("href");
+        link.classList.toggle("active", href === `#${entry.target.id}`);
+      });
+    });
+  },
+  {
+    threshold: 0.45
+  }
+);
+
+sections.forEach((section) => navObserver.observe(section));
 
 if (copyBtn && copyMessage && discordText) {
   copyBtn.addEventListener("click", async () => {
