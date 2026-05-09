@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>caackee | Portfolio</title>
+    <title>caackee | Staff Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Lucide Icons for a modern look -->
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
@@ -16,7 +15,8 @@
         <div class="logo">caackee<span>.</span></div>
         <div class="nav-links">
             <a href="#home">Home</a>
-            <a href="#projects">Work</a>
+            <a href="#experience">Experience</a>
+            <a href="#philosophy">Philosophy</a>
             <a href="#contact">Contact</a>
         </div>
     </nav>
@@ -25,57 +25,82 @@
         <div class="hero-content">
             <h1 class="fade-in">Hi, I'm <span class="highlight">caackee</span></h1>
             <p class="fade-in-delayed">Developer & Staff Specialist</p>
+            
+            <div class="info-grid fade-in-delayed">
+                <div class="info-tag"><i data-lucide="clock"></i> UTC +1</div>
+                <div class="info-tag"><i data-lucide="languages"></i> English</div>
+                <div class="info-tag"><i data-lucide="shield-check"></i> Admin / Dev / Manager</div>
+            </div>
+
             <div class="badge-container fade-in-delayed">
-                <span class="badge">Minecraft Modding</span>
-                <span class="badge">UI/UX</span>
-                <span class="badge">Systems</span>
+                <span class="badge">Java</span>
+                <span class="badge">Skript</span>
+                <span class="badge">Node.js</span>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="cards-section">
-        <h2 class="section-title">Projects & Expertise</h2>
+    <section id="experience" class="cards-section">
+        <h2 class="section-title">Experience</h2>
         <div class="grid">
             <div class="card glass">
-                <i data-lucide="code-2" class="icon"></i>
-                <h3>Module Porting</h3>
-                <p>Expertise in porting complex Java modules between Minecraft client frameworks.</p>
+                <span class="status-pill current">Active</span>
+                <h3>Strength Hut</h3>
+                <p class="role">Trial Developer</p>
+                <p class="details">250+ Discord Members</p>
             </div>
             <div class="card glass">
-                <i data-lucide="layout" class="icon"></i>
-                <h3>Web Dashboards</h3>
-                <p>Creating high-performance, modern interfaces for client modification hosting.</p>
+                <h3>Trimz</h3>
+                <p class="role">Admin</p>
+                <p class="details">1000+ Discord Members</p>
             </div>
             <div class="card glass">
-                <i data-lucide="terminal" class="icon"></i>
-                <h3>Server Scripting</h3>
-                <p>Custom Skript solutions for inventory management and protected area interactions.</p>
+                <h3>Altars Arena</h3>
+                <p class="role">Moderator</p>
+                <p class="details">300+ Discord Members</p>
+            </div>
+            <div class="card glass">
+                <h3>AltarsReborn</h3>
+                <p class="role">Developer</p>
+                <p class="details">150+ Discord Members</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="philosophy" class="qa-section">
+        <h2 class="section-title">Staff Philosophy</h2>
+        <div class="qa-container">
+            <div class="qa-item glass">
+                <h4>What is your staff style?</h4>
+                <p>Chill, slightly lazy, but I get stuff done easily. I prefer simple escalations but I'm not afraid to use my perms when necessary.</p>
+            </div>
+            <div class="qa-item glass">
+                <h4>How do you handle rule-breakers?</h4>
+                <p>I believe in second chances for minor issues, but serious offenses like doxxing result in an immediate permanent ban.</p>
+            </div>
+            <div class="qa-item glass">
+                <h4>How do you fix a struggling network?</h4>
+                <p>I focus on getting a trusted manager to handle the people, while I dive into the backend to eliminate critical coding errors.</p>
             </div>
         </div>
     </section>
 
     <section id="contact" class="contact-section">
         <div class="glass contact-card">
-            <h2>Let's Connect</h2>
+            <h2>Direct Contact</h2>
             <div class="contact-info">
-                <div class="info-item">
-                    <i data-lucide="github"></i>
-                    <span>caackee</span>
-                </div>
                 <div class="info-item">
                     <i data-lucide="message-square"></i>
                     <span>2m4d2b4d</span>
+                </div>
+                <div class="info-item">
+                    <i data-lucide="github"></i>
+                    <span>caackee</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2026 caackee. Built with passion.</p>
-    </footer>
-
-    <script>
-        lucide.createIcons();
-    </script>
+    <script>lucide.createIcons();</script>
 </body>
 </html>
